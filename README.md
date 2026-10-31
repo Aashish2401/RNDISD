@@ -1,10 +1,14 @@
-# rndisd: Android USB tethering on Apple Silicon Macs
+# Android USB tethering for your Mac
 
-macOS has no driver for RNDIS, the protocol most Android phones (notably
-Samsung) use for USB tethering. The old HoRNDIS kernel extension is abandoned
-and doesn't work on Apple Silicon. `rndisd` is a small userspace daemon that
-talks RNDIS to the phone over libusb, so **no kernel extension, no reduced
-security mode, no paid app**.
+Plug in an iPhone and your Mac just shares its connection over the cable. Plug
+in an Android phone and, until now, nothing happens. Macs have no driver for
+RNDIS, the protocol Android (notably Samsung) uses for USB tethering, and the
+old HoRNDIS kernel extension is abandoned and doesn't work on Apple Silicon.
+
+**rndisd fixes that.** It's a small userspace daemon that talks RNDIS to your
+phone over libusb, so you get wired Android tethering on a modern Mac with **no
+kernel extension, no lowered system security, and no paid app**. You don't need
+an iPhone just to tether over USB. iPhones keep working natively alongside it.
 
 > **Status: experimental.** Tested on one setup: Samsung Galaxy S24 Ultra
 > (One UI 9) and an M4 MacBook Air. Verified: RNDIS handshake, DHCP lease,
