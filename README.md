@@ -39,7 +39,7 @@ built-in support**, and the two coexist.
 ## Install
 
 ```sh
-git clone https://github.com/YOUR_USER/rndisd.git
+git clone https://github.com/Aashish2401/rndisd.git
 cd rndisd
 make                 # build as your normal user (needs Homebrew in PATH)
 sudo ./rndisd -v     # foreground test: plug in phone, enable USB tethering
